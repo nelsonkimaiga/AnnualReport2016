@@ -354,7 +354,7 @@
           App.scroll_to_panel($el.attr('data-related-panel'), $panel);
           return History.pushState({
             target: 'panel'
-          }, $el.find('.tooltip').text() + " | Annual Report 2014 | CropTrust", root.url + root.baseurl + $el.attr('href'));
+          }, $el.find('.tooltip').text() + " | Annual Report 2016 | AESA", root.url + root.baseurl + $el.attr('href'));
         });
       }
       return App.panels_nav_spy();
