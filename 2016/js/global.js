@@ -28,7 +28,7 @@
       e.preventDefault();
       return History.pushState({
         target: 'panel'
-      }, "Annual Report 2014 | CropTrust", root.url + root.baseurl + '/home');
+      }, "Annual Report 2016 | AESA", root.url + root.baseurl + '/home');
     });
     $(document).on('click', '.js-topic-close', function(e) {
       e.preventDefault();
@@ -66,7 +66,7 @@
       $el = $(this);
       return History.pushState({
         target: 'topic'
-      }, $el.attr('data-related-topic') + " | Annual Report 2014 | CropTrust", root.url + $el.attr('href'));
+      }, $el.attr('data-related-topic') + " | Annual Report 2016 | AESA", root.url + $el.attr('href'));
     });
     $(document).on('click', '.js-panel-link', function(e) {
       var $el, $panel;
@@ -81,7 +81,7 @@
       App.scroll_to_panel($el.attr('data-related-panel'), $panel);
       return History.pushState({
         target: 'panel'
-      }, $el.text() + " | Annual Report 2014 | CropTrust", root.url + $el.attr('href'));
+      }, $el.text() + " | Annual Report 2016 | AESA", root.url + $el.attr('href'));
     });
     History.Adapter.onDomLoad(function() {
       var State, hash_array, hash_base;
@@ -126,7 +126,7 @@
       if (target === 'topic') {
         return $.get(State.url + '/', function(data) {
           var topic_slug;
-          document.title = $(data).find(".topic-header-title").text() + ' | Annual Report 2014 | Crop Trust';
+          document.title = $(data).find(".topic-header-title").text() + ' | Annual Report 2016 | AESA';
           topic_slug = $(data).find('article.topic').attr('data-topic-slug');
           if ($('.topic[data-topic-slug=' + topic_slug + ']').length) {
 
@@ -386,7 +386,7 @@
                 }
                 return History.pushState({
                   target: 'panel-manual'
-                }, $panel.find('h2.u-outline').text() + " | Annual Report 2014 | CropTrust", root.url + root.baseurl + '/' + $panel.attr('id'));
+                }, $panel.find('h2.u-outline').text() + " | Annual Report 2016 | AESA", root.url + root.baseurl + '/' + $panel.attr('id'));
               }
             }
           }
